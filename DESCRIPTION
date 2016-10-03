@@ -1,8 +1,10 @@
 Package: stupidweather
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Stupid Weather Prediction For Demo Purposes
 Version: 0.1.0
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
+Authors@R: person("Michael", "Green", email = "micke.green@gmail.com", role = c("aut", "cre"))
+Description: This is a really stupid weather prediction app which is meant as a test case for API's using R.
+License: GPL-3 | file LICENSE
 LazyData: TRUE
+Imports: stats
+RoxygenNote: 5.0.1

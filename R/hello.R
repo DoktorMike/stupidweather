@@ -1,18 +1,21 @@
-# Hello, world!
-#
-# This is an example function named 'hello' 
-# which prints 'Hello, world!'.
-#
-# You can learn more about package authoring with RStudio at:
-#
-#   http://r-pkgs.had.co.nz/
-#
-# Some useful keyboard shortcuts for package authoring:
-#
-#   Build and Reload Package:  'Ctrl + Shift + B'
-#   Check Package:             'Ctrl + Shift + E'
-#   Test Package:              'Ctrl + Shift + T'
 
-hello <- function() {
-  print("Hello, world!")
-}
+#' This is the hello function
+#'
+#' @return a text string "Hello, world!"
+#' @export
+#'
+#' @examples
+#' hello()
+hello <- function() print("Hello, world!")
+
+#' Predict the weather for the next n days
+#'
+#' @param n the number of days to predict
+#'
+#' @return a character vector of predictions which can be "sunny" or "rainy"
+#' @export
+#' @importFrom stats rbinom
+#'
+#' @examples
+#' predictweather(5)
+predictweather<-function(n=10) as.character(factor(rbinom(n, 1, 0.5), labels = c("sunny", "rainy")))
